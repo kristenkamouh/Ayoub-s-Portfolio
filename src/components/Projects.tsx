@@ -9,6 +9,7 @@ import autocadHomeDesign from "@/assets/autocad-home-design.jpeg";
 import communicationGuide from "@/assets/communication-guide.png";
 import visualLearning from "@/assets/visual-learning.png";
 import microscopeDesign from "@/assets/microscope-design.jpeg";
+import big5Test from "@/assets/ayoub-big5.jpeg";
 interface Project {
   title: string;
   description: string;
@@ -49,8 +50,10 @@ const projects: Project[] = [{
   title: "Big 5 Test",
   description: "An interactive personality assessment tool based on the Big Five personality traits model.",
   tags: ["Psychology", "Assessment"],
-  viewType: "link",
-  viewLabel: "View Details"
+  viewType: "modal",
+  viewLabel: "View Results",
+  mediaType: "image",
+  mediaUrl: big5Test
 }, {
   title: "Visual Learning",
   description: "An educational platform designed to enhance learning through visual content and interactive elements.",
