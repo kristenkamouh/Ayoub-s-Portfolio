@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import ayoubPhoto from "@/assets/ayoub.jpeg";
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
@@ -47,15 +48,11 @@ const About = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
               <div className="relative w-full h-full flex items-center justify-center p-8">
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl flex items-center justify-center">
-                  {/* Placeholder for photo - replace with actual image */}
-                  <div className="text-center">
-                    <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                      <span className="text-6xl font-bold text-white">JA</span>
-                    </div>
-                    <p className="text-muted-foreground text-sm">Add your photo here</p>
-                  </div>
-                </div>
+                <img 
+                  src={ayoubPhoto} 
+                  alt="Jad Ayoub" 
+                  className="w-full h-full object-cover rounded-xl"
+                />
               </div>
             </motion.div>
 
