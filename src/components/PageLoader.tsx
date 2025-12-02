@@ -41,7 +41,7 @@ const PageLoader = () => {
                   ease: "easeInOut" 
                 }}
               >
-                Jad Ayoub
+                Portfolio
               </motion.h1>
             </motion.div>
 
@@ -84,3 +84,4 @@ const PageLoader = () => {
 };
 
 export default PageLoader;
+
